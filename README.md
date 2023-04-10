@@ -15,7 +15,7 @@ I wrote a script that connects to HDMI CEC ( cec-client needed ) and listens for
 If you want to use firefox instead of chromium, replace "chromium" with "firefox" in the script below.
 Alternatively, you can just install chromium:
 
-´sudo apt-get install chromium-browser´
+`sudo apt-get install chromium-browser`
 
 These are the keys supported by my TV Remote. You can modify the script for your TV Remote, see Modification below.
 
