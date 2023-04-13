@@ -7,6 +7,7 @@ Hello everyone.
 #Description:
 
 I wrote a script that connects to HDMI CEC ( cec-client needed ) and listens for TV Remote key presses. Based on the keys pressed / released (or auto-released; holding down certain keys for too long makes them auto-release) different actions are executed. Some examples:
+
 ![remotecontrol](https://user-images.githubusercontent.com/12376668/231612995-ae14a26a-67d7-41bc-a6d3-4ceef471c747.png)
 
     write letters and numbers using 0-9 keys (simulating 3x4 keypad phones - key "2" switches between a-b-c-2, key 9 switches between w-x-y-z-9) ( xdotool needed )
