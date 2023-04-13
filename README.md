@@ -1,10 +1,10 @@
-#Original work of:
+# Original work of:
 
 https://ubuntu-mate.community/t/controlling-raspberry-pi-with-tv-remote-using-hdmi-cec/4250
 
 Hello everyone.
 
-#Description:
+# Description:
 
 I wrote a script that connects to HDMI CEC ( cec-client needed ) and listens for TV Remote key presses. Based on the keys pressed / released (or auto-released; holding down certain keys for too long makes them auto-release) different actions are executed. Some examples:
 
@@ -21,7 +21,7 @@ Alternatively, you can just install chromium:
 
 These are the keys supported by my TV Remote. You can modify the script for your TV Remote, see Modification below.
 
-#Installation:
+# Installation:
 First you need to install cec-client and xdotool; using terminal:
 
 `sudo apt-get install cec-client xdotool`
@@ -82,7 +82,7 @@ Then add this in the Startup Programs (Menu - System - Control Center - Startup 
 
 Restart, try, report :slightly_smiling:
 
-Modification:
+# Modification:
 If you want, you can edit the script to change or add the commands executed on certain button presses.
 You can detect the additional buttons that CEC on your TV supports. Kill the running cec-client, run the cec-client in the terminal, and watch for the output while you're pressing all the keys on your TV Remote; using terminal:
 
