@@ -87,6 +87,7 @@ If you want, you can edit the script to change or add the commands executed on c
 You can detect the additional buttons that CEC on your TV supports. Kill the running cec-client, run the cec-client in the terminal, and watch for the output while you're pressing all the keys on your TV Remote; using terminal:
 
 `killall cec-client`
+
 `cec-client`
 
 Ctrl+C when you're ready to stop
