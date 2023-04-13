@@ -28,7 +28,7 @@ First you need to install cec-client and xdotool; using terminal:
 
 Test if you can receive TV Remote button presses with cec-client; using terminal:
 
-cec-client
+`cec-client`
 
 You should see some diagnostic messages. Press numeric keys (as they are most likely to be supported) on your TV Remote. Watch out for new lines, especially of this form:
 
@@ -43,12 +43,13 @@ Create the file cecremote.sh and mark it as executable; using terminal:
 
 ´touch cecremote.sh´
 ´chmod +x cecremote.sh´
+
 Finally, save it; using nano in terminal:
 press "Ctrl+X" to close the file, then "Y" to confirm saving, then "Enter" to save the file under the right file name
 
 Try executing it, using terminal:
 
-cec-client | ./cecremote.sh
+`cec-client | ./cecremote.sh`
 
 At this point it should be working.
 Point the TV Remote at the TV, press up/down/left/right and check if the mouse pointer is moving.
@@ -62,12 +63,12 @@ So, if everything works, exit the script in terminal: Press Ctrl+C
 Run at startup:
 If you want to start this script every time the Raspberry starts, create a new file called cecremotestart.sh and mark it as executable; using terminal:
 
-touch cecremotestart.sh
-chmod +x cecremotestart.sh
+`touch cecremotestart.sh`
+`chmod +x cecremotestart.sh`
 
 Then open it; using terminal:
 
-nano cecremotestart.sh
+`nano cecremotestart.sh`
 
 Copy - paste this in the file:
 
@@ -85,8 +86,9 @@ Modification:
 If you want, you can edit the script to change or add the commands executed on certain button presses.
 You can detect the additional buttons that CEC on your TV supports. Kill the running cec-client, run the cec-client in the terminal, and watch for the output while you're pressing all the keys on your TV Remote; using terminal:
 
-killall cec-client
-cec-client
+`killall cec-client`
+`cec-client`
+
 Ctrl+C when you're ready to stop
 
 Edit the script, then execute the modified script by manually executing cecremotestart.sh; using terminal:
